@@ -21,6 +21,9 @@ export default class App extends Component {
         name:" minh huyền"
       }
     }
+    getAge=(age)=>{
+        console.log("app nhận được",age);
+    }
     increaseCount=()=>{
       this.setState({
         count:this.state.count+1
@@ -43,7 +46,7 @@ export default class App extends Component {
         <p>count: {this.state.count}</p>
         <p>company: {this.state.title}</p>
         <button onClick={this.increaseCount}>increase_count</button>
-        <Parent name={this.state.name}></Parent>
+        <Parent age={this.getAge} name={this.state.name}></Parent>
       </>
     )
   }
