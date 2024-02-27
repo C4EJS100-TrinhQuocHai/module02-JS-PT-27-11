@@ -39,7 +39,6 @@ export default function App() {
          <Route path='/products/:productId' element={<ProductDetail></ProductDetail>}>
         </Route>
         <Route path='*' element={<NotFount></NotFount>}></Route>
-
       </Routes>
     </div>
   )
